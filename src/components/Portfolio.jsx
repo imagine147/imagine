@@ -1,18 +1,19 @@
 import React from 'react'
 import PortfolioCard from './reuseable/PortfolioCard'
+import image from '../assets/icons/Social button.png'
 
 
 const Portfolio = () => {
   return (
-    <div className='px-16'>
+    <div className='px-10'>
 
-    <div className='w-full flex mx-auto flex-row justify-between pt-10 pb-4'>
-    <div className='flex flex-col gap-4 text-start '>
-      <h6>Recent Projects</h6>
-      <h1 className='text-left text-4xl font-bold'>My Portfolio</h1>
+    <div className='w-full flex flex-col mx-auto lg:flex-row lg:justify-between items-center pt-10 pb-4'>
+    <div className='flex flex-col text-center gap-4 lg:text-start text-[#282938] '>
+      <h6 className='font-semibold text-sm'>Recent Projects</h6>
+      <h1 className='lg:text-start text-3xl lg:text-4xl font-bold'>My Portfolio</h1>
       </div>
        <div className=''>
-       <img className='' src="/src/assets/icons/Social button.png" alt="" />
+       <img className='pt-8 lg:pt-0' src={image} alt="" />
        </div>
     </div>
   

@@ -2,35 +2,35 @@ import React from 'react'
 
 const Contact = () => {
   return (
-    <div className='w-[50%] mx-auto '>
+    <div className='w-[80%] lg:w-[60%] mx-auto py-16 '>
       <div className='flex flex-col gap-4 text-center'>
         <p className='text-sm font-bold text-[#282938]'>Get in Touch</p>
-        <h1 className='text-4xl font-bold text-[#282938]'>Contact me</h1>
+        <h1 className='lg:text-4xl text-3xl font-bold text-[#282938]'>Contact me</h1>
         <p className='text-[#1C1E53]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </div>
 
       <div>
         <form className='' action="">
           <div className='flex flex-col gap-4 text-left mt-10 text-[#282938]'>
-            <div className='flex flex-row gap-6 '>
-              <div className='w-1/2 flex flex-col gap-2'>
+            <div className='flex flex-col lg:flex-row gap-6 '>
+              <div className='lg:w-1/2 flex flex-col gap-2'>
               <label htmlFor="FirstName">First name</label>
               <input className='py-2 border rounded-md' type="text" />
               </div>
 
-              <div className='w-1/2 flex flex-col gap-2'>
+              <div className='lg:w-1/2 flex flex-col gap-2'>
               <label htmlFor="LastName">Last name</label>
               <input className='py-2 border rounded-md' type="text" />
               </div>
             </div>
 
-            <div className='w-full flex flex-row gap-6'>
-             <div className='w-1/2 flex flex-col gap-2'>
+            <div className='flex flex-col lg:flex-row gap-6'>
+             <div className='lg:w-1/2 flex flex-col gap-2'>
              <label htmlFor="Email">Email</label>
              <input className='py-2 border rounded-md' type="text" />
              </div>
 
-             <div className='w-1/2 flex flex-col gap-2'>
+             <div className='lg:w-1/2 flex flex-col gap-2'>
              <label htmlFor="Password">Password</label>
              <input className='py-2 border rounded-md' type="text" />
              </div>

@@ -4,7 +4,7 @@ import { TiStarFullOutline } from 'react-icons/ti'
 
 const TestimonialCard = () => {
   return (
-    <div className='grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto  max-w-6xl mt-20 mb-20 '>
+    <div className='grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mx-auto  mt-20 mb-20 '>
       {testimonial.map((testimonial)=>(
         <div className='border-2 border-teal-700 p-6 rounded-lg flex flex-col space-y-6' key={testimonial.id}>
           <div className='flex'>
@@ -13,13 +13,13 @@ const TestimonialCard = () => {
             ))}
 
           </div>
-          <p className='text-gray-600'>{testimonial.comment}</p>
+          <p className='text-[#1C1E53]'>{testimonial.comment}</p>
           <div className='flex items-center gap-4'>
             <div className=''>
               <img className='w-14 h-14 rounded-full' src={testimonial.img} alt={testimonial.name} />
               <div>
-                <h3 className='text-lg font-semibold text-gray-800'>{testimonial.name}</h3>
-                <p className=''>{testimonial.desc}</p>
+                <h3 className='text-lg font-bold text-gray-800 text-[#282938]'>{testimonial.name}</h3>
+                <p className='text-[#1C1E53] font-semibold'>{testimonial.desc}</p>
               </div>
 
             </div>

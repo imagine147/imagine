@@ -1,33 +1,22 @@
 import React from 'react'
 import image from '../assets/icons/Group 11 1 (1).png'
+import { Link } from 'react-scroll'
 
 const Hero = () => {
   return (
-    <div className='] bg-[#F5FCFF] py-20 flex flex-row items-center px-8  '>
-      
-      <div className='w-full flex flex-col text-left gap-4 mx-auto'>
-      <h6 className='text-[10px] text-[#282938] font-bold'>Hey, I am John</h6>
-
-      <div className='space-y-3' >
-      
-      <h1 className='text-2xl font-bold text-[#282938]'>I develop dynamic and User-Centered Web Applications</h1>
-      <p className='text-sm text-[#1C1E53]'>My expertise spans both front-end and back-end development, enabling me to build comprehensive solutions that meet diverse client needs.</p>
+    <div className='flex flex-col  gap-6 lg:gap-4  lg:flex-row bg-[#F5FCFF] w-full mx-auto px-10 py-30 items-center '>
+      <div className='flex flex-col gap-6 lg:gap-4 order-2 lg:order-1 items-center lg:items-start'>
+        <h6 className='font-semibold text-sm text-[#282938]'>Hey, I am John</h6>
+        <h1 className='font-bold text-3xl lg:text-5xl text-center text-[#282938] lg:text-left'>I develop dynamic and User-Centered Web  Applications</h1>
+        <p className='text-sm text-start text-[#1C1E53] pb-10 pt-4'>My expertise spans both front-end and back-end development, enabling me to build comprehensive solutions that meet diverse client needs.</p>
+       <Link to='contact'> <div className='py-10'><button className='bg-blue-800 w-full text-white text-sm p-3 rounded-md'> Get In Touch</button></div></Link>
       </div>
-      
-
-      <div>
-      <button className='bg-[#5E3BEE] py-2 px-4 text-white text-sm rounded-sm mt-3'>Get in Touch</button>
+      <div className='order-1 lg:order-2'>
+        <img src={image} alt="" />
       </div>
-
-      </div>
-
-      <div>
-        <img className='' src={image} alt="" />
-      </div>
-
-
     </div>
   )
-}
-
-export default Hero
+ }
+ 
+ 
+ export default Hero

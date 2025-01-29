@@ -9,13 +9,13 @@ const PortfolioCard = ({}) => {
     
 
 {portfolio.map((port)=>(
-  <div className='w-[40%] mx-auto flex flex-col gap-6 text-left ' key={port.id}>
+  <div className='lg:w-[40%] mx-auto flex flex-col gap-6 text-left ' key={port.id}>
   <img className='rounded-md' src={port.img} alt={port.name} />
  <div className='px-6 flex flex-col gap-2'>
- <h1 className='text-3xl font-bold'>{port.name}</h1>
+ <h1 className='text-2xl font-bold text-[#282938]'>{port.name}</h1>
  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.{port.desc}</p>
  </div>
-  <div className='px-6 mb-20 font-semibold text-xl '>
+  <div className='px-6 mb-20 font-semibold text-xl text-[#282938] '>
   <button className='border-b-2 border-purple-400 pb-4 flex'>View website  <GoArrowUpRight size={30}/> </button>
  
   
