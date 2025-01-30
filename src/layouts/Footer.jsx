@@ -11,10 +11,10 @@ const Footer = () => {
     <div>
      <footer className='bg-[#F5FCFF] w-full px-10 mt-20 items-center  mx-auto'>
      <div className='flex flex-col lg:flex-row  justify-between items-center py-20'>
-     <div className='flex flex-row items-center'>
+     <Link to='hero' className='flex flex-row items-center'>
       <img className='w-10' src={image} alt="" />
         <h1 className='text-[#394149] font-bold text-[20px]'>JohnDev,</h1>
-      </div>
+      </Link>
 
       <div className='flex flex-col lg:flex-row gap-6 font-semibold text-center text-[18px] py-6 lg:py-0 '>
         <Link to='hero'><h1>Home</h1></Link>

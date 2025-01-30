@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-  <div>
+  <div className='font-roboto'>
     <NavBar/>
     <div id='hero'>
     <Hero/>

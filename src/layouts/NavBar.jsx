@@ -42,7 +42,7 @@ return (
        <div className="flex-shrink-0">
         <Link
           className="text-xl font-bold text-gray-600 flex items-center cursor-pointer"
-          to='home'
+          to='hero'
         >
           <img src={Logo} alt="" />
           JohnDev,
